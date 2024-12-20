@@ -4,4 +4,15 @@ with open(filename, "r") as file:
 
 for report in reports:
     for number in report:
+        """d
+        d
         
+        d
+        d
+        d
+        d
+        d
+        d
+        
+        d
+        """
