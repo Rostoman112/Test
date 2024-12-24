@@ -1,5 +1,3 @@
-from collections import Counter
-
 filename = 'input.txt'
 with open(filename, 'r') as file:
     places = file.readlines()
@@ -12,11 +10,12 @@ for place in places:
     column_1.append(int(part[0]))
     column_2.append(int(part[1]))
 
-column_2_sorted = Counter(column_2)
+column_1.sort()
+column_2.sort()
 
 suma = 0
 
-for place in column_1:
-    suma += place * column_2_sorted.get(place, 0)
+for c1, c2 in zip(column_1, column_2):
+    suma += abs(c1 - c2)
 
 print(suma)
