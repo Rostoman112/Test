@@ -1,6 +1,6 @@
 from collections import Counter
 
-filename = 'input.txt'
+filename = 'input_day_1.txt'
 with open(filename, 'r') as file:
     places = file.readlines()
 
